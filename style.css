@@ -1,0 +1,200 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    /* SMOOTH SCROLL */
+    
+    html{
+    scroll-behavior:smooth;
+    }
+    
+    /* BODY */
+    
+    body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#fdf2f8;
+    color:#4a044e;
+    }
+    
+    /* NAVBAR */
+    
+    nav{
+    
+    position:sticky;
+    top:0;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    padding:20px 50px;
+    
+    background:#be185d;
+    color:white;
+    
+    z-index:1000;
+    
+    }
+    
+    nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    }
+    
+    nav a:hover{
+    color:#fbcfe8;
+    }
+    
+    /* HERO */
+    
+    .hero{
+    
+    height:90vh;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    text-align:center;
+    
+    padding:20px;
+    
+    }
+    
+    /* PROFILE IMAGE */
+    
+    .profile-pic{
+    
+    width:180px;
+    height:180px;
+    
+    border-radius:50%;
+    
+    object-fit:cover;
+    
+    margin-bottom:20px;
+    
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    
+    }
+    
+    /* BUTTON */
+    
+    .btn{
+    
+    display:inline-block;
+    
+    margin-top:20px;
+    
+    padding:12px 25px;
+    
+    background:#ec4899;
+    
+    color:white;
+    
+    text-decoration:none;
+    
+    border-radius:6px;
+    
+    transition:0.3s;
+    
+    }
+    
+    .btn:hover{
+    background:#db2777;
+    }
+    
+    /* SECTION DIVIDER */
+    
+    section{
+    border-bottom:1px solid #f9a8d4;
+    }
+    
+    /* ABOUT */
+    
+    .about{
+    
+    padding:80px 50px;
+    
+    text-align:center;
+    
+    background:#fbcfe8;
+    
+    }
+    
+    /* CONTACT */
+    
+    .contact{
+    
+    padding:80px 50px;
+    
+    text-align:center;
+    
+    background:#fdf2f8;
+    
+    }
+    
+    .contact p{
+    margin-top:10px;
+    }
+    
+    /* FOOTER */
+    
+    footer{
+    
+    background:#be185d;
+    
+    color:white;
+    
+    text-align:center;
+    
+    padding:20px;
+    
+    }
+    
+    /* TEXT ANIMATION */
+    
+    .fade-in{
+    
+    opacity:0;
+    
+    animation:fadeIn 2s forwards;
+    
+    }
+    
+    .fade-in-delay{
+    
+    opacity:0;
+    
+    animation:fadeIn 2s forwards;
+    
+    animation-delay:1s;
+    
+    }
+    
+    @keyframes fadeIn{
+    
+    from{
+    opacity:0;
+    transform:translateY(20px);
+    }
+    
+    to{
+    opacity:1;
+    transform:translateY(0);
+    }
+    
+    }
